@@ -5,7 +5,7 @@ const RegistrationArea = styled.div`
 `
 
 const RegistrationImage = styled.div`
-  background-image: url('/LoginImage.jpg');
+  background-image: url('/Login-Image.jpg');
   background-size: cover;
   height: 100vh;
   width: 50%;
