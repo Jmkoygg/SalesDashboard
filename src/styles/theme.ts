@@ -79,3 +79,9 @@ export const darkTheme: Theme = {
     success: '#008000',
   },
 }
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    appBackground: string
+    appColor: string
+  }
+}
