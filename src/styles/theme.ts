@@ -83,6 +83,10 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     appBackground: string
     appColor: string
+    appDefaultStroke: string
+    appLogo: string
+    appSkeletonFrom: string
+    appSkeletonTo: string
     buttons: {
       primary: string
       primaryColor: string
@@ -93,6 +97,13 @@ declare module 'styled-components' {
       borderlessAlert?: string
       disabled: string
       disabledColor: string
+    }
+    card: {
+      alert: string
+      background: string
+      border: string
+      success: string
+      warning: string
     }
     textInput: {
       active: string
@@ -108,6 +119,5 @@ declare module 'styled-components' {
       success: string
       subtitle?: string
     }
-    appLogo: string
   }
 }
