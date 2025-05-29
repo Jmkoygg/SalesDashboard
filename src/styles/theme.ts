@@ -4,7 +4,7 @@ export const lightTheme: Theme = {
   appBackground: '#FFF',
   appColor: '#000',
   appDefaultStroke: '#E0E0E0',
-  appLogo: 'dnc-logo-black.svg',
+  appLogo: 'dnc-preto.svg',
   appSkeletonFrom: '#eee',
   appSkeletonTo: '#ccc',
   buttons: {
@@ -44,7 +44,7 @@ export const darkTheme: Theme = {
   appBackground: '#060B26',
   appColor: '#FFF',
   appDefaultStroke: '#21497D',
-  appLogo: 'dnc-logo-white.svg',
+  appLogo: 'dnc-branco.svg',
   appSkeletonFrom: '#060B26',
   appSkeletonTo: '#21497D',
   buttons: {
@@ -83,5 +83,31 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     appBackground: string
     appColor: string
+    buttons: {
+      primary: string
+      primaryColor: string
+      primaryHover: string
+      alert: string
+      alertColor: string
+      alertHover: string
+      borderlessAlert?: string
+      disabled: string
+      disabledColor: string
+    }
+    textInput: {
+      active: string
+      activeColor: string
+      borderColor: string
+      disabled: string
+      disabledBorderColor: string
+      disabledColor: string
+      placeholderColor: string
+    }
+    typographies: {
+      error: string
+      success: string
+      subtitle?: string
+    }
+    appLogo: string
   }
 }
