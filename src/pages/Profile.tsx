@@ -2,6 +2,7 @@ import { CardComponent, Header, StyledH2, StyledButton } from '@/components'
 import { useContext } from 'react'
 import { AppThemeContext } from '@/contexts/AppThemeContext'
 import { Container, Grid } from '@mui/material'
+import { logout } from '@/services'
 
 const Profile = () => {
   const themeContext = useContext(AppThemeContext)
@@ -23,7 +24,9 @@ const Profile = () => {
                 Trocar para tema{' '}
                 {themeContext?.appTheme === 'light' ? 'escuro' : 'claro'}
               </StyledButton>
-              <StyledButton className="alert">Logout</StyledButton>
+              <StyledButton className="alert" onClick={logout}>
+                Logout
+              </StyledButton>
             </CardComponent>
           </Grid>
         </Grid>
