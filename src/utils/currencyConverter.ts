@@ -3,7 +3,7 @@
  * @param pixels - Number to be converted
  * @returns Converted BRL string
  */
-export function currencyConterter(value: number): string {
+export function currencyConverter(value: number): string {
   return new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL',
